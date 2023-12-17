@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&display=swap');
+*{
+    list-style: none;
+    font-family: 'Averia Sans Libre', sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+a {
+    font-weight: bold;
+}
+
+a {
+    font-style: italic;
+}
+
+
+body{ /* <!-- background color --> */
+    background: #3febc5
+
+
+}
+
+.header{
+    color: #191d1b;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.wrapper{ /* <!-- size --> */
+    width: 100%;
+    height: 100%;
+}
+
+.lb_section{ /* <!-- adds primary box --> */
+    width: 900px;
+    height: 900px;
+    margin: 100px auto 0;
+    background: #ccad74;
+    border-radius: 5px;
+    padding: 25px 40px;
+    position: relative;
+}
+
+.lb_section u1{ /* <!-- adjusts list (daily, monthly, yearly) to be horizontal --> */
+    display: flex;
+}
+
+.lb_section li{ /* <!-- adjusts text of list(daily, monthly, yearly) --> */
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3a3d51;
+    cursor: pointer;
+}
+
+.onePoints{ /* <!-- makes first place special --> */
+    color: #dbdf1c;
+    padding-left: 70%;
+    position: absolute;
+}
+
+.twoPoints{ /* <!-- makes second place special --> */
+    color: #615a64;
+    padding-left: 70%;
+    position: absolute;
+}
+
+.threePoints{ /* <!-- makes third place special --> */
+    color: #cf5728;
+    padding-left: 70%;
+    position: absolute;
+}
+
+.points{ /* <!-- alligns all points --> */
+    position: absolute;
+    padding-left: 70%;
+}
+
+.name{ /* <!-- alligns names --> */
+    text-align: left;
+}
+
+.lb_section li :hover,
+.lb_section li.active{
+    color: #fff;
+}
+
+.lb_wrap{    /* <!-- adds second box --> */
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    background: rgb(201, 181, 144);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.lb_wrap .lb_item{
+    padding: 25px;
+}
+
+ .lb_wrap .lb_item .lb_mem{  /* <!-- adds line to seperate people --> */
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #aa7d63c7;
+}
+
+.lb_wrap .lb_item .name_bar{
+    margin: 0 20px;
+    width: calc(100% - 150px);
+}
+
+.name_bar p span{
+    margin-right: 5px;
+}
+
+
+.lb_wrap .lb_item .bar_wrap{ /* <!-- shows max points line --> */
+    height: 5px;
+    width: 300px;
+    background: #d5b000;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.lb_wrap .lb_item .bar_wrap .inner_bar{ /* <!-- shows progress line --> */
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.lb_wrap .lb_mem .img{ /* <!-- resizes pfp to fit lb --> */
+    width: 25%;
+}
